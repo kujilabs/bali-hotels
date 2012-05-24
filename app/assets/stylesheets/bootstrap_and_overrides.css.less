@@ -1,0 +1,111 @@
+@import "twitter/bootstrap/bootstrap";
+
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+/*@fontAwesomeEotPath: asset-path('fontawesome-webfont.eot');
+@fontAwesomeWoffPath: asset-path('fontawesome-webfont.woff');
+@fontAwesomeTtfPath: asset-path('fontawesome-webfont.ttf');
+@fontAwesomeSvgzPath: asset-path('fontawesome-webfont.svgz');
+@fontAwesomeSvgPath: asset-path('fontawesome-webfont.svg');*/
+
+// Font Awesome
+/*@import "fontawesome";*/
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+body {
+  background:url(/assets/background.png);
+  color:@white;
+  a {
+    color:;
+  }
+}
+
+#page_container {
+  width:940px;
+  min-width:940px;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+#megahead {
+  margin-top:10px;
+  height:359px;
+  .left, .right {
+    height:359px;
+    float:left;
+  }
+  .left { 
+    width:271px; 
+    background: #1a0e01 url(/assets/head_orniment.png) right no-repeat;
+    a img {
+      position:relative;
+      top:37px;
+      left:18px;
+    }
+   }
+  .right { 
+    width:669px; 
+    #mainslider {
+      height:322px;
+    }
+    #navigator {
+      font-size:16px;
+      height:37px;
+      background:url(/assets/nav_background.png);
+      ul {
+        margin:0;
+        padding:9px 0 0 22px;
+      }
+      li {
+        display:inline;
+        padding-right:45px;
+        background:url(/assets/nav_ornimental.png) right no-repeat;
+        &.last {
+          padding-right:0;
+          background:none;
+        }
+      }
+      a {
+         color:#b3aba5; 
+         &:hover { color:#dbd6d2; text-decoration:none; }
+      }
+    }
+  }
+}
+
+
+#page {
+  background:#402c17 url(/assets/head_fade.png) top no-repeat; 
+  padding:34px 40px 40px 0;
+  width:900px;
+  min-width:900px;  
+
+  #side_body_content {
+    width:271px;
+  }
+    
+  #body_content {
+    float:left;
+    margin-right:311px;    
+  }
+  
+
+}
