@@ -29,7 +29,7 @@
 
 
 body {
-  background:url(/assets/background.png);
+  background: #36200c url(/assets/background.png);
   color:@white;
   a {
     color:;
@@ -41,9 +41,13 @@ body {
   min-width:940px;
 }
 
-h1 {
+h1, h2, h3 {
   font-weight:normal;
 }
+
+h1 { font-size:26px; color:white; margin-bottom:15px;}
+h2 { font-size:20px; color:#eae7e1;  }
+h3 { font-size:15px; color:#eae7e1; }
 
 #megahead {
   margin-top:10px;
@@ -97,15 +101,25 @@ h1 {
   padding:34px 40px 40px 0;
   width:900px;
   min-width:900px;  
+  color: #9b9186;
 
   #side_body_content {
+    float:left;    
     width:271px;
   }
     
   #body_content {
-    float:left;
-    margin-right:311px;    
+    margin-left:311px;    
   }
-  
 
+}
+
+#footer {
+  background:#402c17 url(/assets/footer_ornimental.png) top no-repeat;   
+  margin-bottom:60px;
+  #footer_inner {
+    padding:35px 20px 10px 20px;
+    color:#9b9186;
+    text-align:right;
+  }
 }

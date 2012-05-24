@@ -1,9 +1,8 @@
-<section id='side_body_content'>
+<section id='side_body_content'> 
   <%=raw @page.content_for(:side_body) %>
 </section>
 
 <section id='body_content'>
+  <h1 id='logo' class="tk-dejarip"><%= @page.title %></h1>     
   <%=raw @page.content_for(:body) %>
 </section>
-
-

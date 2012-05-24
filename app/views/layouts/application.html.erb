@@ -12,9 +12,7 @@
 
         <div id="megahead">
           <div class="left">
-
-              <%= link_to image_tag('peninsula_bay_resort_logo.png'), refinery.root_path %>
-            
+            <%= link_to image_tag('peninsula_bay_resort_logo.png'), refinery.root_path %>
           </div>
           <div class="right">
             <div id="mainslider" class="slideshow">
@@ -30,11 +28,10 @@
 
       </header>
       <section id="page" class="container">
-        <h1 id='logo' class="tk-dejarip">Peninsula Bay Resort - Bali</h1>  
         <%= yield %>
       </section>
-      <footer class="container">
-        <%= render '/refinery/footer' -%>
+      <footer id="footer" class="container">
+        <div id="footer_inner"><%= render '/refinery/footer' -%></div>
       </footer>
     </div>
     <%= render '/refinery/javascripts' %>
