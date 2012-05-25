@@ -14,5 +14,9 @@ test: &test
   <<: *defaults
   database: bali_hotels_test
 
+production: &test
+  <<: *defaults
+  database: bali_hotels_production
+
 cucumber:
   <<: *test
