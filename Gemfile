@@ -45,8 +45,7 @@ gem 'twitter-bootstrap-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Refinery CMS
-
-gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms', '~> 2.0.0'
 
 gem 'aws-s3', :require => 'aws/s3'
 
